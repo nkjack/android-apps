@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/intro_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:gravity="center">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/exploreImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="48dp">
+
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp">
+
+                    <ImageView
+                        android:id="@+id/profileImage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@mipmap/ic_person" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/newPostLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:layout_toLeftOf="@+id/profileImage"
+                        android:layout_toRightOf="@+id/addToFavoritesButton"
+                        android:clickable="true"
+                        android:gravity="center_vertical|right">
+
+                        <TextView
+                            android:id="@+id/textViewProfileName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:paddingBottom="4dp"
+                            android:paddingRight="4dp"
+                            android:text="Eli Boten"
+                            android:textColor="@color/colorTextPrimary"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <ImageButton
+                        android:id="@+id/addToFavoritesButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="14dp"
+                        android:background="@null"
+
+                        android:src="@drawable/ic_content_add" />
+
+                    <View
+                        android:id="@+id/dividerNewPost"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/profileImage"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/colorTextSecondary2" />
+
+                    <RelativeLayout
+                        android:id="@+id/bodyLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dividerNewPost">
+
+
+                        <TextView
+                            android:id="@+id/bodyContent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:gravity="right"
+                            android:maxLines="20"
+                            android:paddingBottom="16dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="16dp"
+                            android:text="@string/intro_post"
+                            android:textColor="#222"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/timePostedTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/bodyContent"
+                            android:gravity="right|center_vertical"
+                            android:maxLines="1"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="4dp"
+                            android:text="בשעה 19:43"
+                            android:textColor="#222"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/symbolsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bodyLayout"
+                        android:gravity="center_vertical"
+                        android:padding="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:paddingLeft="16dp">
+
+                            <TextView
+                                android:id="@+id/commentCountCard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="7"
+                                android:textSize="16sp" />
+
+                            <ImageButton
+                                android:id="@+id/commentsImageButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/commentCountCard"
+                                android:background="@null"
+                                android:src="@mipmap/ic_comment_gray" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="left">
+
+                            <ImageButton
+                                android:id="@+id/minusButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:background="@null"
+                                android:src="@mipmap/ic_arrow_down" />
+
+                            <TextView
+                                android:id="@+id/scorePost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/minusButton"
+                                android:text="21"
+                                android:textSize="16sp" />
+
+                            <ImageButton
+                                android:id="@+id/plusButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/scorePost"
+                                android:background="@null"
+                                android:src="@mipmap/ic_arrow_up_green" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true">
+
+                            <TextView
+                                android:id="@+id/scoreRateText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="5"
+                                android:textSize="16sp" />
+
+                            <ImageButton
+                                android:id="@+id/rateImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/scoreRateText"
+                                android:background="@null"
+                                android:src="@mipmap/ic_star_amber" />
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </ScrollView>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="12dp"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="POSTS"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/explanation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="You can Like/Unlike any rate post to effect it reputation. Comment on any post, and even save it to your favorites Posts."
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

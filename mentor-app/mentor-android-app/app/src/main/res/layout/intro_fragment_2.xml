@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/intro_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="10">>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/exploreImage"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:layout_weight="7.5"-->
+    <!--android:layout_margin="24dp"-->
+    <!--android:src="@drawable/screenshot_degree_home_2" />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:gravity="center">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/exploreImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/headerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/degreeName"
+                        fontPath="Alef-Bold.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="right"
+                        android:maxLines="20"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="24dp"
+                        android:text="מדעי המחשב"
+                        android:textColor="#222"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/degreeFaculty"
+                        fontPath="Alef-Bold.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/degreeName"
+                        android:gravity="right"
+                        android:maxLines="20"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="הפקולטה למדעים מדויקים"
+                        android:textColor="#222"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/symbolsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/headerLayout"
+                    android:layout_marginLeft="16dp">
+
+                    <ImageButton
+                        android:id="@+id/hurtImageCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:src="@mipmap/ic_hurt_gr" />
+
+                    <TextView
+                        android:id="@+id/homeFragmentLikeNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/hurtImageCard"
+                        android:text="59"
+                        android:textSize="16sp" />
+
+                    <ImageButton
+                        android:id="@+id/favoriteImageCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/homeFragmentLikeNum"
+                        android:background="@null"
+                        android:src="@mipmap/ic_favorite" />
+
+                    <TextView
+                        android:id="@+id/favoritesNumberCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/favoriteImageCard"
+                        android:text="143"
+                        android:textSize="16sp" />
+
+                    <ImageButton
+                        android:id="@+id/numCommentsImageButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/favoritesNumberCard"
+                        android:background="@null"
+                        android:src="@mipmap/ic_comment_gray" />
+
+                    <TextView
+                        android:id="@+id/numPostsTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/numCommentsImageButton"
+                        android:text="62"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/cardHeaderDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/symbolsLayout"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/colorDivider" />
+
+                <RelativeLayout
+                    android:id="@+id/action_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardHeaderDivider"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:padding="12dp">
+
+                    <Button
+                        android:id="@+id/followButton"
+                        style="@style/TextAppearance.AppCompat.Small"
+                        android:layout_width="125dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_toRightOf="@+id/toggleLikeButton"
+                        android:background="@drawable/flat_toggle_follow"
+                        android:gravity="center"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/button_follow"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/toggleLikeButton"
+                        style="@style/TextAppearance.AppCompat.Small"
+                        android:layout_width="125dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginStart="4dp"
+                        android:background="@drawable/flat_toggle_follow"
+                        android:drawableLeft="@drawable/ic_hurt_wh"
+                        android:drawableStart="@drawable/ic_hurt_wh"
+                        android:gravity="center"
+                        android:paddingEnd="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingStart="20dp"
+                        android:text="LIKE"
+                        android:textColor="@android:color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tagsLayoutCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/action_layout"
+                    android:layout_margin="12dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/layoutBeforeRBHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/personImg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/ic_person" />
+
+                        <TextView
+                            android:id="@+id/numberRatesHome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toLeftOf="@+id/personImg"
+                            android:text="92" />
+
+                        <TextView
+                            android:id="@+id/tvAboveRBHome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toLeftOf="@+id/numberRatesHome"
+                            android:text="הצביעו" />
+                    </RelativeLayout>
+
+                    <RatingBar
+                        android:id="@+id/ratingBarHome"
+                        style="@android:style/Widget.Holo.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layoutBeforeRBHome"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:isIndicator="true"
+                        android:max="5"
+                        android:numStars="5"
+                        android:rating="4.3" />
+                    <!--style="@android:style/Widget.Holo.RatingBar.Small"-->
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="12dp"
+        android:layout_weight="3"
+        android:gravity="top">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="DEGREE"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/explanation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="Finding my degree. Follow to get News Feed. Like to show Respect. Comment, Rate And Ask to get more Information"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

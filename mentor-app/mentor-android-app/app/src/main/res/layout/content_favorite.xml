@@ -1,0 +1,70 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:layout="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myFavoriteFragmentRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    tools:context="com.studentadvisor.noam.studentadvisor.activities.FavoriteActivity"
+    tools:showIn="@layout/activity_favorite">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeMyFavoriteRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/myFavoriteRecycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorTextSecondary2"
+            android:visibility="gone" />
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/emergencyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="48dp"
+        android:orientation="vertical"
+        android:background="@color/emergencyBackgrounColor"
+        android:visibility="gone">
+
+        <ImageView
+            android:background="@null"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/start_emergency"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/emergencyTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:text="@string/emergency_favorite"
+            android:textColor="@color/emergencyTextColor"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/myFavoriteProgressBar"
+        style="?android:attr/indeterminateProgressStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="2dp"
+        android:visibility="visible" />
+
+</RelativeLayout>

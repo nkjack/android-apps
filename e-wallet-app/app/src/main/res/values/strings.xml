@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EWallet</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_category">CategoryActivity</string>
+    <string name="choose_sub_category">בחר קטוגריה משנית</string>
+    <string name="comment">הערות</string>
+    <string name="price_to_input">כמה שילמת?</string>
+    <string name="ok">הכנס</string>
+    <string name="budget_options">עדכון תקציב</string>
+</resources>

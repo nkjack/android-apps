@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_post_comments"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trans_black_25"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <include
+            android:id="@+id/post_layout"
+            layout="@layout/view_post_comments_symbols" />
+
+        <View
+            android:id="@+id/dividerPostComments"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_below="@+id/post_layout"
+            android:background="@color/chrome_grey" />
+
+
+        <ListView
+            android:id="@+id/list_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout2"
+            android:layout_below="@+id/dividerPostComments"
+            android:background="@color/white"
+            android:divider="@color/chrome_grey"
+            android:dividerHeight="1dp"
+            android:scrollbars="vertical"
+            android:visibility="visible" />
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recycler_comments"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/white"-->
+        <!--android:divider="@android:color/transparent"-->
+        <!--android:visibility="visible"/>-->
+
+        <LinearLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/chrome_grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/postCommentBtn"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@null"
+                    android:padding="16dp"
+                    android:text="Post"
+                    android:textColor="@color/colorTextPrimary" />
+
+                <EditText
+                    android:id="@+id/commentEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:hint="כתוב תגובה&#8230;"
+                    android:maxLines="3" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

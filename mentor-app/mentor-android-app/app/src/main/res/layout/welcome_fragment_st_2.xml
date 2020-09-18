@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/welcome_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_1"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    android:paddingTop="48dp"
+    android:weightSum="5">
+
+
+    <TextView
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:text="Some Details About You"
+        android:textColor="@color/fragment_1_txt_color"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/image_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="48dp"
+        android:layout_weight="4"
+        android:clipChildren="false"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvYearStudy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:text="שנת לימודים"
+                android:textColor="@color/fragment_1_txt_color"
+                android:textSize="20sp" />
+            <!--<Spinner-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:id="@+id/spinnerYearName"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toLeftOf="@+id/tvYearStudy"-->
+            <!--android:prompt="@string/year_prompt"-->
+            <!--android:entries="@array/year_arrays"-->
+            <!--/>-->
+            <RadioGroup
+                android:id="@+id/RGYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvYearStudy"
+                android:padding="12dp">
+
+
+                <RadioButton
+                    android:id="@+id/firstYearButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/fragment_1_txt_color"
+                    android:gravity="center"
+                    android:text="שנה א"
+                    android:textColor="@color/fragment_1_txt_color" />
+
+                <RadioButton
+                    android:id="@+id/secondYearButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/fragment_1_txt_color"
+                    android:gravity="center"
+                    android:text="שנה ב"
+                    android:textColor="@color/fragment_1_txt_color" />
+
+
+                <RadioButton
+                    android:id="@+id/thirdYearButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/fragment_1_txt_color"
+                    android:gravity="center"
+                    android:text="שנה ג"
+                    android:textColor="@color/fragment_1_txt_color" />
+
+                <RadioButton
+                    android:id="@+id/fourthYearButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/fragment_1_txt_color"
+                    android:gravity="center"
+                    android:text="שנה ד"
+                    android:textColor="@color/fragment_1_txt_color" />
+
+
+                <RadioButton
+                    android:id="@+id/fifthYearButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/fragment_1_txt_color"
+                    android:gravity="center"
+                    android:text="שנה ה"
+                    android:textColor="@color/fragment_1_txt_color" />
+
+                <RadioButton
+                    android:id="@+id/sixthYearButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/fragment_1_txt_color"
+                    android:gravity="center"
+                    android:text="שנה ו"
+                    android:textColor="@color/fragment_1_txt_color" />
+
+
+                <RadioButton
+                    android:id="@+id/seventhYearButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/fragment_1_txt_color"
+                    android:gravity="center"
+                    android:text="שנה ז"
+                    android:textColor="@color/fragment_1_txt_color" />
+
+                <RadioButton
+                    android:id="@+id/enoughtYearButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/fragment_1_txt_color"
+                    android:gravity="center"
+                    android:text="דיי כבר"
+                    android:textColor="@color/fragment_1_txt_color" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/headerDegreesTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:text="התארים שלי"
+                android:textColor="@color/fragment_1_txt_color"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/addBtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/headerDegreesTV"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/btn_log_in"
+                android:padding="8dp"
+                android:text="הוסף"
+                android:textColor="@color/white" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addBtn">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/addDegreeLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/degreeTv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dltBtn1"
+                            android:padding="8dp"
+                            android:text="תואר להוספה"
+                            android:textColor="@color/fragment_1_txt_color" />
+
+                        <ImageButton
+                            android:id="@+id/dltBtn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@null"
+                            android:src="@mipmap/ic_close_blue" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/addDegreeLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/degreeTv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dltBtn2"
+                            android:padding="8dp"
+                            android:text="תואר להוספה"
+                            android:textColor="@color/fragment_1_txt_color" />
+
+                        <ImageButton
+                            android:id="@+id/dltBtn2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@null"
+                            android:src="@mipmap/ic_close_blue" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/addDegreeLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/degreeTv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dltBtn3"
+                            android:padding="8dp"
+                            android:text="תואר להוספה"
+                            android:textColor="@color/fragment_1_txt_color" />
+
+                        <ImageButton
+                            android:id="@+id/dltBtn3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@null"
+                            android:src="@mipmap/ic_close_blue" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="Continue"
+        android:textColor="@color/fragment_1_txt_color"
+        android:textSize="24sp" />
+
+
+</LinearLayout>

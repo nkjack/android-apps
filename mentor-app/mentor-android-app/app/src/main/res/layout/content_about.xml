@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:orientation="vertical"
+    tools:context="com.studentadvisor.noam.studentadvisor.activities.AboutActivity"
+    tools:showIn="@layout/activity_about">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/copyrightsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="@string/copyrights"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/copyrightsDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTextSecondary" />
+
+            <TextView
+                android:id="@+id/aboutTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="ABOUT"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/aboutDivier"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTextSecondary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="@string/about_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/librariesTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="LIBRARIES"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/libraryDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTextSecondary" />
+
+            <ListView
+                android:id="@+id/copyrightList"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:cacheColorHint="@color/colorTextSecondary"
+                android:entries="@array/copyrights_array"
+                android:paddingLeft="2dp"
+                android:theme="@style/ListFont" />
+
+            <TextView
+                android:id="@+id/iconsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="12dp"
+                android:text="ICONS"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/iconsDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTextSecondary" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:cacheColorHint="@color/colorTextSecondary"
+                android:entries="@array/copyrights_icons_array"
+                android:dividerHeight="0.0dp"
+                android:paddingLeft="2dp"
+                android:theme="@style/ListFont"/>
+
+            <TextView
+                android:id="@+id/universitiesTV"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="12dp"
+                android:text="Info &amp; Credit"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/universitiedDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorTextSecondary" />
+
+            <ListView
+                android:id="@+id/infoAndCreditList"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:cacheColorHint="@color/colorTextSecondary"
+                android:entries="@array/info_credit_array"
+                android:paddingLeft="2dp"
+                android:theme="@style/ListFont" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

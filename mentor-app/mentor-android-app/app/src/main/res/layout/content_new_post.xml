@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.studentadvisor.noam.studentadvisor.activities.NewPostActivity">
+    <!--tools:showIn="@layout/activity_new_post"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/ic_person" />
+        <!--app:border="true"-->
+        <!--app:border_color="#EEEEEE"-->
+        <!--app:border_width="4dp"-->
+        <!--app:shadow="true"-->
+
+
+        <EditText
+            android:id="@+id/editTextNewPost"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@null"
+            android:gravity="top|right"
+            android:hint="@string/post_rate_string"
+            android:paddingBottom="4dp"
+            android:paddingRight="4dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="14sp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/profileImage"
+            android:layout_toStartOf="@+id/profileImage"
+            android:layout_above="@+id/relativeLayout2" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/relativeLayout2">
+
+            <Button
+                android:id="@+id/rateButton"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="0dp"
+                android:background="@null"
+                android:padding="16dp"
+                android:text="RATE"
+                android:textColor="@color/colorTextPrimary" />
+
+            <Button
+                android:id="@+id/askButton"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/rateButton"
+                android:background="@null"
+                android:padding="16dp"
+                android:text="ASK"
+                android:textColor="@color/colorTextPrimary" />
+
+            <RatingBar
+                android:id="@+id/ratingBarNewPost"
+                style="@android:style/Widget.Holo.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/askButton"
+                android:layout_centerHorizontal="true"
+                android:isIndicator="false"
+                android:visibility="visible"
+                android:max="5"
+                android:numStars="5"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

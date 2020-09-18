@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--All the items added without any grouping-->
+
+    <!--<item-->
+    <!--android:id="@+id/navigation_item_1"-->
+    <!--android:icon="@drawable/ic_number_0"-->
+    <!--android:title="@string/navigation_item_1" />-->
+    <!--<item-->
+    <!--android:id="@+id/navigation_item_2"-->
+    <!--android:icon="@drawable/ic_number_1"-->
+    <!--android:title="@string/navigation_item_2" />-->
+    <!--<item-->
+    <!--android:id="@+id/navigation_item_3"-->
+    <!--android:icon="@drawable/ic_number_2"-->
+    <!--android:title="@string/navigation_item_3" />-->
+    <!--<item-->
+    <!--android:id="@+id/navigation_item_4"-->
+    <!--android:icon="@drawable/ic_number_3"-->
+    <!--android:title="@string/navigation_item_4" />-->
+    <!--<item-->
+    <!--android:id="@+id/navigation_item_5"-->
+    <!--android:icon="@drawable/ic_number_4"-->
+    <!--android:title="@string/navigation_item_5" />-->
+
+    <!--The drawer itesm below have been classified into groups-->
+
+    <!--<group-->
+    <!--android:id="@+id/group_1"-->
+    <!--android:checkableBehavior="single">-->
+    <!--<item-->
+    <!--android:id="@+id/navigation_item_1"-->
+    <!--android:icon="@drawable/ic_hurt_wh"-->
+    <!--android:title="@string/navigation_item_1" />-->
+    <!--<item-->
+    <!--android:id="@+id/navigation_item_2"-->
+    <!--android:icon="@drawable/ic_hurt_wh"-->
+    <!--android:title="@string/navigation_item_2" />-->
+    <!--</group>-->
+    <!--<group-->
+    <!--android:id="@+id/group_2"-->
+    <!--android:checkableBehavior="single">-->
+    <!--<item-->
+    <!--android:id="@+id/navigation_item_3"-->
+    <!--android:icon="@drawable/ic_hurt_wh"-->
+    <!--android:title="@string/navigation_item_3" />-->
+    <!--<item-->
+    <!--android:id="@+id/navigation_item_4"-->
+    <!--android:icon="@drawable/ic_hurt_wh"-->
+    <!--android:title="@string/navigation_item_4" />-->
+    <!--</group>-->
+    <!--<group-->
+    <!--android:id="@+id/group_3"-->
+    <!--android:checkableBehavior="single">-->
+    <!--<item-->
+    <!--android:id="@+id/navigation_item_5"-->
+    <!--android:icon="@drawable/ic_hurt_wh"-->
+    <!--android:title="@string/navigation_item_5" />-->
+    <!--</group>-->
+
+
+    <!--The drawer items below have been categorized according to headers-->
+
+    <item
+        android:id="@+id/menu_item_home"
+        android:icon="@mipmap/ic_home_drawer"
+        android:title="MY NEWS FEED" />
+
+    <item
+        android:id="@+id/menu_group_activity"
+        android:title="ACTIVITY">
+        <menu>
+            <item
+                android:id="@+id/menu_item_explore"
+                android:icon="@mipmap/ic_hat_drawer"
+                android:title="EXPLORE" />
+            <item
+                android:id="@+id/menu_item_favorite"
+                android:icon="@mipmap/ic_star_drawer"
+                android:title="MY FAVORITE POSTS" />
+            <item
+                android:id="@+id/menu_item_followes"
+                android:icon="@mipmap/ic_follow_drawer"
+                android:title="FOLLOWS" />
+            <item
+                android:id="@+id/menu_item_likes"
+                android:icon="@mipmap/ic_hurt_drawer"
+                android:title="LIKES" />
+            <item
+                android:id="@+id/menu_item_globe"
+                android:icon="@mipmap/ic_globe_drawer"
+                android:title="COMMUNITY"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_group_app"
+        android:title="APP">
+        <menu>
+            <item
+                android:id="@+id/menu_item_mail"
+                android:icon="@mipmap/ic_mail_drawer"
+                android:title="EMAIL CEO" />
+            <item
+                android:id="@+id/menu_item_settings"
+                android:icon="@mipmap/ic_settings_drawer"
+                android:title="SETTINGS" />
+            <item
+                android:id="@+id/menu_item_about"
+                android:title="ABOUT"
+                android:icon="@mipmap/ic_question_mark"/>
+            <item
+                android:id="@+id/menu_item_logout"
+                android:icon="@mipmap/ic_logut_drawer"
+                android:title="LOG OUT" />
+        </menu>
+    </item>
+
+</menu>

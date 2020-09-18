@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#183F6B</color>
+    <color name="colorPrimaryDark">#112C4B</color>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <color name="colorAccent">#FF5252</color>
+    <color name="colorAccent2">#2C9C71</color>
+
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#727272</color>
+    <color name="colorDivider">#B6B6B6</color>
+    <color name="colorTextIcons">#FFFFFF</color>
+
+    <color name="colorTextSecondary2">#DCDCDC</color>
+
+    <color name="colorPrimaryLight">#C5CAE9</color>
+    <color name="white_alpha">#8FFF</color>
+    <color name="white_alpha2">#5FFF</color>
+
+    <color name="colorTabAccent">#FFC107</color>
+    <color name="tagBackgroundColor">#1A237E</color>
+
+    <!--//custom bg background-->
+    <color name="colorHighlight">#B6B6B6</color>
+    <color name="backgroundActivities">#FFFFFA</color>
+    <color name="fragment_1">#F7F7F7</color>
+    <color name="iron">#CCCCCC</color>
+
+
+    <color name="bg_login">#26ae90</color>
+    <color name="bg_register">#2e3237</color>
+    <color name="bg_main">#428bca</color>
+    <color name="white">#FFFFFF</color>
+    <color name="input_login">#222222</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login">#26ae90</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#ff6861</color>
+    <color name="input_login_hint">#999999</color>
+
+    <color name="grid_red">#F44336</color>
+    <color name="grid_pink">#E91E63</color>
+    <color name="grid_indigo">#3F51B5</color>
+    <color name="grid_purple">#9C27B0</color>
+    <color name="grid_green">#4CAF50</color>
+    <color name="grid_teal">#009688</color>
+    <color name="grid_deap_purple">#673AB7</color>
+
+    <integer-array name="grid_colors">
+        <item>@color/grid_red</item>
+        <item>@color/grid_pink</item>
+        <item>@color/grid_indigo</item>
+        <item>@color/grid_purple</item>
+        <item>@color/grid_green</item>
+        <item>@color/grid_teal</item>
+        <item>@color/grid_deap_purple</item>
+    </integer-array>
+
+    <color name="green_follow">#59B2A1</color>
+    <color name="green_follow_pressed">#8859B2A1</color>
+</resources>

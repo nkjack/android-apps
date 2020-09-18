@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mentor</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_item_1">Item 1</string>
+    <string name="navigation_item_2">Item 2</string>
+    <string name="navigation_item_3">Item 3</string>
+    <string name="navigation_item_4">Item 4</string>
+    <string name="navigation_item_5">Item 5</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_explore">Explore</string>
+    <string name="title_activity_degree">Degree</string>
+    <string name="header_drawer_pic">header drawer pic</string>
+    <string name="text_dismiss">dismiss</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="app_name2">Android Login and Registration</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_continue">CONTINUE AS GUEST</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+
+    <!-- degree components-->
+    <string name="button_follow">follow</string>
+    <string name="button_unfollow">unfollow</string>
+    <string name="write_new_post">מה אני חושב על התואר&#8230;</string>
+    <string name="title_activity_new_post">NewPostActivity</string>
+    <string name="title_activity_news_feed">NewsFeed</string>
+
+    <string name="year_prompt">שנת הלימודים שלי</string>
+
+    <string name="post_rate_string"> מה אני חושב / חושבת על התואר..
+        \n\nאיך המוסד לימודים..
+        \n\nאיך האווירה עם הסטודנטים..
+        \n\nאיך המרצים שלי..
+        \n\nמה הרמה של המבחנים..
+        \n\nכמה אני מרוצה מהתואר..
+        \n\nאיך התואר השפיע עלי..
+        \n\nלמה אני ממליץ / ממליצה עליו..</string>
+    <string name="post_ask_string">מה אני חושב / חושבת על התואר...</string>
+
+    <string-array name="year_arrays">
+        <item>שנה א</item>
+        <item>שנה ב</item>
+        <item>שנה ג</item>
+        <item>שנה ד</item>
+        <item>שנה ה</item>
+        <item>שנה ו</item>
+        <item>שנה ז</item>
+    </string-array>
+
+    <string name="emergency_favorite">When you Favorite a Post, it comes to life here. Touch the + button inside a Post Card to get started!</string>
+    <string name="emergency_followes">When you Follow a Degree, it comes to life here and fill your News Feed with a relevent Posts. Get started to have a better Access for your degrees!</string>
+    <string name="emergency_likes">When you Like a Degree, it comes to life here, without notifying yout News Feed. Touch the Like Button in the Degree Page to get Started!</string>
+    <string name="emergency_newsfeed">When you Follow a Degree, You get News Feed from your degrees, direct to your Home Tab. Touch the Explore Button to get Started!</string>
+    <string name="emergency_explore_feeds">Explore Posts and Explore People Opinions</string>
+
+    <string name="intro_post">"תואר לחיים. התואר הביא לי כלים שאיתם יכולתי להשתלב בתעשיית היי טק בקלות. מוסד הלימודים אפשר תנאים טובים ואת המרצים הכי טובים בארץ. אני בשנה השלישית שלי בתואר ויש לי הצעות עבודה מהחברות המובילות במשק. ממליץ בחום! מצפה לכם עבודה קשה"</string>
+    <string name="about_text">Mentor provides you the ability to choose your academic degree wisely. We are a platform that connect Students who are already study their degree, with people that didn\'t decide yet.</string>
+
+    <string name="copyrights">© All rights reserved to Noam Kahan</string>
+
+    <string-array name="copyrights_array">
+        <item>JUnit 4.12 - Copyright © 2002-2015 JUnit.</item>
+        <item>Picasso - Copyright 2013 Square, Inc. http://www.apache.org/licenses/LICENSE-2.0</item>
+        <item>Android Volley - Copyright (C) 2014 Xiaoke Zhang</item>
+        <item>Android Volley - Copyright (C) 2011 The Android Open Source Project</item>
+        <item>HashtagView - Copyright 2015 Artsiom Grintsevich</item>
+        <item>google-gson - © Google, Inc.</item>
+        <item>Calligraphy - Copyright 2013 Christopher Jenkins</item>
+        <item>JodaTime - © www.joda.org</item>
+        <item>Nine Old Androids - Copyright 2012 Jake Wharton</item>
+        <item>CircleImageView - Copyright 2014 - 2015 Henning Dodenhof</item>
+    </string-array>
+
+    <string-array name="copyrights_icons_array">
+        <item>http://creativecommons.org/licenses/by/3.0/</item>
+        <item>spiral media - https://eu.fotolia.com/p/201145056</item>
+    </string-array>
+
+    <string-array name="info_credit_array">
+        <item>Tel Aviv University - https://go.tau.ac.il/b.a</item>
+        <item>Technion - http://www.technion.ac.il/</item>
+        <item>The Hebrew University Of Jersualem - http://new.huji.ac.il/</item>
+        <item>Ben Gurion University Of The Negev - http://in.bgu.ac.il/Pages/default.aspx</item>
+        <item>IDC Herzelia - http://portal.idc.ac.il/he/main/homepage/pages/homepage.aspx</item>
+        <item>Bar Ilan University - http://www1.biu.ac.il/</item>
+        <item>University Of Haifa - http://www.haifa.ac.il/index.php/en/</item>
+        <item>The Open University Of Israel - http://www.openu.ac.il/</item>
+        <item>Afeka - http://www.afeka.ac.il/</item>
+        <item>Bazelel - http://www.bezalel.ac.il/en/homenew/</item>
+        <item>Sapir College - http://www.sapir.ac.il/</item>
+        <item>Ruppin Academic Center - http://www.ruppin.ac.il/</item>
+        <item>Ort - http://www.c.ort.org.il/handesaim/</item>
+        <item>The College Of Management Academic Studies - https://www.colman.ac.il/</item>
+    </string-array>
+</resources>

@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.studentadvisor.noam.studentadvisor.fragments.MyLikesFragment"
+    android:id="@+id/myLikesFragmentRoot">
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipeLikesRefresh">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listAllLikes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/colorTextSecondary2"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:id="@+id/emergencyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="48dp"
+        android:orientation="vertical"
+        android:background="@color/emergencyBackgrounColor"
+        android:visibility="gone">
+
+        <ImageView
+            android:background="@null"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/liked_emergency"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/emergencyTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:text="@string/emergency_likes"
+            android:textColor="@color/emergencyTextColor"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    <!--<ProgressBar-->
+        <!--style="?android:attr/indeterminateProgressStyle"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/myLikesProgressBar"-->
+        <!--android:layout_gravity="center|top"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:visibility="gone"-->
+        <!--android:background="@null"/>-->
+
+    <ProgressBar
+        android:id="@+id/myLikesProgressBar"
+        style="?android:attr/indeterminateProgressStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="2dp"
+        android:visibility="visible" />
+</RelativeLayout>

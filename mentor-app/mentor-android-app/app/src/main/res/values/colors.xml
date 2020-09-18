@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#183F6B</color>
+    <color name="colorPrimaryDark">#112C4B</color>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <color name="colorAccent">#FF5252</color>
+    <color name="colorAccent2">#2C9C71</color>
+
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#727272</color>
+    <color name="colorDivider">#B6B6B6</color>
+    <color name="colorTextIcons">#FFFFFF</color>
+
+    <color name="colorTextSecondary2">#DCDCDC</color>
+
+    <color name="colorPrimaryLight">#C5CAE9</color>
+    <color name="white_alpha">#8FFF</color>
+    <color name="white_alpha2">#5FFF</color>
+
+    <color name="colorTabAccent">#FFC107</color>
+    <color name="tagBackgroundColor">#1A237E</color>
+
+    <color name="translucent_scrim_top">#36000000</color>
+    <color name="translucent_scrim_top_center">#10000000</color>
+    <color name="translucent_scrim_bottom">#4A000000</color>
+    <color name="translucent_scrim_bottom_center">#2D000000</color>
+
+    <color name="bg_login">#26ae90</color>
+    <color name="bg_register">#2e3237</color>
+    <color name="bg_main">#428bca</color>
+    <color name="white">#ffffff</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login">#26ae90</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#ff6861</color>
+
+    <color name="login_dark">#009688</color>
+    <color name="register_dark">#212121</color>
+
+    <!-- search view-->
+    <color name="trans_black_25">#40000000</color>
+    <color name="chrome_grey">#F2F2F2</color>
+
+    <color name="green_follow">#59B2A1</color>
+    <color name="green_follow_pressed">#8859B2A1</color>
+
+    <!--<color name="fragment_1">#00A9D9</color>-->
+    <color name="fragment_1">#F7F7F7</color>
+    <color name="fragment_1_txt_color">#112C4B</color>
+    <color name="fragment_2">#FFA721</color>
+    <color name="fragment_3">#2C9C71</color>
+
+    <color name="button_frg_3">#048050</color>
+    <color name="text_frg_2">#5B6DC5</color>
+    <!--283998-->
+    <color name="btn_log_in">#30A692</color>
+    <color name="btn_log_in2">#7730A692</color>
+    <color name="btn_tag_pressed">#0D7F7C</color>
+
+    <color name="snack_bar_color">#30A692</color>
+
+    <color name="emergencyTextColor">#D3D3D3</color>
+    <color name="emergencyBackgrounColor">#FFFFFF</color>
+
+    <color name="backgroundDrawer">#0B1E30</color>
+
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/welcome_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_1"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    android:paddingTop="18dp"
+    android:weightSum="6">
+
+    <ImageButton
+        android:layout_marginLeft="20dp"
+        android:id="@+id/exitWelcomeButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:src="@mipmap/ic_close_blue" />
+    <LinearLayout
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:text="Welcome"
+                android:textColor="@color/fragment_1_txt_color"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="WHO R U?"
+            android:textColor="@color/fragment_1_txt_color"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/image_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:clipChildren="false"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
+        <ImageButton
+            android:id="@+id/babyImage"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border_button_toggle"
+            android:padding="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/baby_welcome_logo" />
+
+        <TextView
+            android:id="@+id/orTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/babyImage"
+            android:layout_centerInParent="true"
+            android:padding="16dp"
+            android:text="OR"
+            android:textColor="@color/fragment_1_txt_color"
+            android:textSize="24dp" />
+
+        <ImageButton
+            android:id="@+id/studentImage"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_below="@+id/orTV"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/border_button_toggle"
+            android:padding="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/student_welcome_logo" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="Continue"
+        android:textColor="@color/fragment_1_txt_color"
+        android:textSize="24sp" />
+
+
+</LinearLayout>
